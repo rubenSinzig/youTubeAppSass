@@ -13,7 +13,7 @@
 }
 
 // mixin for colors fonts
-@mixin font-color {
+@mixin font-color($color) {
   @if map-has-key($font-colors, $color) {
     color: map-get($font-colors, $color);
   } @else {

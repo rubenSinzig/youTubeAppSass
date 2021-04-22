@@ -4,51 +4,53 @@
   height: 6vh;
   @include bg-color-dark(light);
   @include center-main-menu;
+
+  // burger-menu & YT-logo
   .logo {
     width: 10%;
     height: 100%;
     @include center-main-menu;
     margin-left: 1rem;
-    //color: silver;
-    @include help-border;
     a {
       display: flex;
       align-items: center;
       text-decoration: none;
+      i,
+      p {
+        @include font-color(light);
+      }
+      i {
+        font-size: 1.3rem;
+      }
+      .fa-youtube {
+        @include font-color(yt);
+      }
+    }
+  }
+
+  // search-bar
+  .search-bar {
+    width: 50%;
+    height: 100%;
+    @include center-main-menu;
+    justify-content: center;
+    @include help-border;
+    input {
+      width: 70%;
+      height: 50%;
+      // stop working from here
+      background-color: rgb(27, 27, 27);
+      color: silver;
+      padding-left: 8px;
+      border: 1.5px solid rgb(58, 58, 58);
+      margin-left: 2rem;
     }
   }
 }
 
 // change to SCSS below this line
-.logo .fa-youtube {
-  color: rgb(224, 0, 0);
-}
-.fa-bars {
-  color: silver;
-}
-.logo i {
-  font-size: 150%;
-}
-.logo a p {
-  color: silver;
-  font-weight: bolder;
-}
 /* Top-Menu SEARCH-BAR */
-.search-bar {
-  width: 55vw;
-  height: 9vh;
-  display: flex;
-  align-items: center;
-}
-.search-bar input {
-  width: 35vw;
-  height: 6vh;
-  background-color: rgb(27, 27, 27);
-  color: silver;
-  padding-left: 8px;
-  border: 1.5px solid rgb(58, 58, 58);
-  margin-left: 2rem;
-}
+
 .search-bar button {
   width: 6vw;
   height: 6vh;
