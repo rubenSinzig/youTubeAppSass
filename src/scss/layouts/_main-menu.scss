@@ -1,28 +1,25 @@
 /* Main-Menu */
-.top-menu {
-  background-color: rgb(39, 39, 39);
+.main-menu {
   width: 100vw;
-  height: 9vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-/* Top-Menu LOGO */
-.logo {
-  width: 12vw;
   height: 6vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-left: 1rem;
-  color: silver;
+  @include bg-color-dark(light);
+  @include center-main-menu;
+  .logo {
+    width: 10%;
+    height: 100%;
+    @include center-main-menu;
+    margin-left: 1rem;
+    //color: silver;
+    @include help-border;
+    a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+  }
 }
-.logo:nth-child(n) :nth-child(2) {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  font-size: 120%;
-}
+
+// change to SCSS below this line
 .logo .fa-youtube {
   color: rgb(224, 0, 0);
 }

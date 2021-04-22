@@ -1,8 +1,29 @@
-// mixin for background-colors
+// help border (remove at the ende)
+@mixin help-border {
+  border: 1px dashed red;
+}
+
+// mixin for colors backgrounds
 @mixin bg-color-dark($color) {
   @if map-has-key($bg-colors-dark, $color) {
     background-color: map-get($bg-colors-dark, $color);
   } @else {
     @error "#{$color} is not defined, use .src/abstracts/_variables.scss -> #{bg-colors-dark}";
   }
+}
+
+// mixin for colors fonts
+@mixin font-color {
+  @if map-has-key($font-colors, $color) {
+    color: map-get($font-colors, $color);
+  } @else {
+    @error "#{$color} is not defined, use .src/abstracts/_variables.scss -> #{font-colors}";
+  }
+}
+
+// mixin for center
+@mixin center-main-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
