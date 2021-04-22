@@ -1,0 +1,8 @@
+// mixin for background-colors
+@mixin bg-color-dark($color) {
+  @if map-has-key($bg-colors-dark, $color) {
+    background-color: map-get($bg-colors-dark, $color);
+  } @else {
+    @error "#{$color} is not defined, use .src/abstracts/_variables.scss -> #{bg-colors-dark}";
+  }
+}
