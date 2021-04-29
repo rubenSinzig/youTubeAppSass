@@ -6411,11 +6411,14 @@ body {
 /* Main-Menu */
 .main-menu {
   width: 100vw;
-  height: 6vh;
+  height: 3.5rem;
   background-color: #282828;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.main-menu a {
+  text-decoration: none;
 }
 .main-menu .logo {
   width: 10%;
@@ -6424,11 +6427,11 @@ body {
   align-items: center;
   justify-content: space-between;
   margin-left: 1rem;
+  border: 1px dashed red;
 }
 .main-menu .logo a {
   display: flex;
   align-items: center;
-  text-decoration: none;
 }
 .main-menu .logo a i,
 .main-menu .logo a p {
@@ -6439,6 +6442,11 @@ body {
 }
 .main-menu .logo a .fa-youtube {
   color: #e00000;
+  margin-left: 1.5rem;
+}
+.main-menu .logo a sup {
+  font-size: 0.65rem;
+  color: #a6a6a6;
 }
 .main-menu .search-bar {
   width: 50%;
@@ -6450,38 +6458,32 @@ body {
   border: 1px dashed red;
 }
 .main-menu .search-bar input {
-  width: 70%;
-  height: 50%;
-  background-color: #1b1b1b;
-  color: silver;
+  width: 60%;
+  height: 1.75rem;
+  background-color: #1e1e1e;
+  color: #e1e1e1;
   padding-left: 8px;
-  border: 1.5px solid #3a3a3a;
+  border: 1.5px solid #373737;
   margin-left: 2rem;
 }
-
-/* Top-Menu SEARCH-BAR */
-.search-bar button {
-  width: 6vw;
-  height: 6vh;
-  background-color: #3a3a3a;
-  border: 1.5px solid #3a3a3a;
-  color: silver;
+.main-menu .search-bar button {
+  width: 4rem;
+  height: 2rem;
+  background-color: #373737;
+  border: 1.5px solid #373737;
 }
-
-.search-bar a {
-  text-decoration: none;
+.main-menu .search-bar button i {
+  color: #a6a6a6;
+  font-size: 0.9rem;
 }
-
-.search-bar a i {
+.main-menu .search-bar .fa-microphone {
+  color: #f0f0f0;
+  font-size: 1.4rem;
+}
+.main-menu .search-bar a {
   margin-left: 1rem;
-  display: flex;
-  color: silver;
-  align-items: center;
-  font-size: 150%;
 }
-
-/* Top-Menu MENU */
-.menu nav ul {
+.main-menu .menu nav ul {
   width: 20vw;
   height: 8vh;
   display: flex;
@@ -6489,13 +6491,11 @@ body {
   justify-content: space-around;
   list-style: none;
 }
-
-.menu nav ul li a img {
+.main-menu .menu nav ul li a img {
   width: 3vw;
   height: 6vh;
 }
-
-.menu nav ul li a i {
+.main-menu .menu nav ul li a i {
   font-size: 150%;
   color: silver;
 }
