@@ -6483,21 +6483,20 @@ body {
 .main-menu .search-bar a {
   margin-left: 1rem;
 }
-.main-menu .menu nav ul {
-  width: 20vw;
-  height: 8vh;
+.main-menu .menu {
+  border: 1px dashed red;
+  width: 15rem;
+  margin-right: 1rem;
+}
+.main-menu .menu ul {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   list-style: none;
 }
-.main-menu .menu nav ul li a img {
-  width: 3vw;
-  height: 6vh;
-}
-.main-menu .menu nav ul li a i {
-  font-size: 150%;
-  color: silver;
+.main-menu .menu img {
+  width: 1rem;
+  height: 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */
