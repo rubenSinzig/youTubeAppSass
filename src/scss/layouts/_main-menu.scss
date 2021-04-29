@@ -71,21 +71,20 @@
       margin-left: 1rem;
     }
   }
+
   // Top-Menu MENU
-  .menu nav ul {
-    width: 20vw;
-    height: 8vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    list-style: none;
-  }
-  .menu nav ul li a img {
-    width: 3vw;
-    height: 6vh;
-  }
-  .menu nav ul li a i {
-    font-size: 150%;
-    color: silver;
+  // stop working from here
+  .menu {
+    @include help-border;
+    width: 15rem;
+    margin-right: 1rem;
+    ul {
+      @include center-main-menu;
+      list-style: none;
+    }
+    img {
+      width: 1rem;
+      height: 1rem;
+    }
   }
 }
